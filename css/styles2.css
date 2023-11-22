@@ -18,7 +18,7 @@ body {
 }
 
 .card {
-    width: 420px;
+    width: 50%;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
@@ -59,6 +59,25 @@ body {
 
 .input-boxP input {
     width: 50%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px 20px 20px 20px;
+}
+
+.card .input-boxend {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.input-boxend input {
+    width: 100%;
     height: 80%;
     background: transparent;
     border: none;
@@ -189,6 +208,11 @@ a {
     margin: 10px 10px;
 }
 
+.card svg {
+    width: 60%;
+    color: white;
+}
+
 .card .voltar:hover {
     background: rgba(255, 255, 255, 0);
 }
@@ -239,10 +263,6 @@ a {
     background:#9f5bee;
 }
 
-#return a {
-    color: wheat;
-}
-
 #mapa{
     width: 340px;
     height: 220px;
@@ -271,4 +291,25 @@ a {
 
 .card .verde:hover {
     background: green;
+}
+
+#espaco {
+    margin-top: 10px;
+}
+
+.botes {
+    display: flex;
+    align-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.card .item {
+    margin: 0 10px; 
+    text-align: center;
+}
+
+.card .legenda{
+    color: white;
+    font-size: 20px;
 }
