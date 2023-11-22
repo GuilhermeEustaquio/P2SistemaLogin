@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Permissoes</title>
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/styleaTime.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /*body {
+      display: none;
+    }*/
+
+  </style>
+  <script src="js/TokenCheck.js"></script>
+</head>
+<body class="bg-gray-100">
+  <a id="LogOff" href="" class="transition duration-200 text-slate-50 absolute bottom-0 left-0 bg-red-500 px-8 py-2 mb-2 ml-2 rounded-lg hover:bg-red-400 hover:shadow-md hover:shadow-red-400/50">Sair</a>
+  <a href="MenuPrincipal.html" class="transition duration-200 text-slate-50 absolute top-0 left-0 bg-sky-500 px-8 py-2 mt-2 ml-2 rounded-lg hover:bg-sky-400 hover:shadow-md hover:shadow-sky-400/50">Voltar</a>
+  <div class="w3-container w3-display-middle">
+    <div class="w3-row-padding">
+          <div class="w3-card-4 w3-container w3-margin-bottom">
+            <h2>Perfis</h2>
+            <ul id="perfilList"></ul>
+          </div>
+    
+          <div class="w3-card-4 w3-container w3-margin-bottom">
+            <h2>Gerenciar Permissões</h2>
+            <label for="perfilSelect">Perfil:</label>
+            <select id="perfilSelect" class="my-2 p-4 bg-gray-100 rounded-lg" required>
+              <option value="">Selecione</option>
+            </select>
+            <br>
+            <label for="permissaoSelect">Permissão:</label>
+            <select id="permissaoSelect" class="my-2 p-4 bg-gray-100 rounded-lg"  required>
+                <option value="">Selecione</option>
+            </select>
+
+            <button id="addPermissaoBtn" class="my-2 mb-4 bg-sky-400 rounded-sm text-slate-50 p-2 transition-all duration-200 hover:bg-sky-500">
+              Adicionar Permissão</button>
+          </div>
+       
+  <div class="w3-card-4 w3-container w3-margin-bottom  overflow-y-auto">
+    <ul id="permissoesList" class="w3-ul"></ul>
+  </div>
+</div>
+</div>
+
+
+    <div id="id02" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom w3-card-4">
+        <header class="w3-container w3-teal"> 
+          <span onclick="document.getElementById('id02').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h4>System X</h4>
+        </header>
+        <div class="w3-container">
+          <p id="mensagem"></p>
+        </div>
+        <footer class="w3-container w3-teal">
+          <p>Modal Footer</p>
+        </footer>
+      </div>
+    </div>
+    <script src="js/GerenciarPerm.js"></script>
+    <script src="js/LogOff.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Usuário</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="card">
+    
+    
+    <form id="userForm" class="">
+      
+        <h1>Criar Usuário</h1>
+        <label for="Nome" >Nome:</label>
+      <div class="input-box">
+        <input type="text" id="nome" name="nome"  required /><br />
+      </div>
+      <label for="Email" class="">Email:</label>
+      <div class="input-box">
+        <input type="text" id="email" name="email"  required /><br />
+      </div>
+      <label for="Senha" class="">Senha:</label>
+      <div class="input-box">
+        <input type="text" id="senha" name="senha"  required /><br />
+      </div>
+      <details>
+        <summary>Endereço</summary>
+        <label class="">Cep: 
+        <div class="input-box">
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" class="" /></label><br />
+        </div>
+        <label class="">Rua:
+        <div class="input-box"> 
+            <input name="rua" disabled type="text" id="rua" size="60" class="" /></label><br />
+        </div>
+        <label class="">Bairro:
+        <div class="input-box">
+            <input name="bairro" disabled type="text" id="bairro" size="40" class="" /></label><br />
+        </div>
+        <label class="">Cidade: 
+        <div class="input-box">
+            <input name="cidade" disabled type="text" id="cidade" size="40" class="" /></label><br />
+        </div>
+        <label class="">Estado: 
+        <div class="input-box">
+            <input name="uf" disabled type="text" id="uf" size="2" class="" /></label><br />
+        </div>
+        <label class="">IBGE: 
+        <div class="input-box">
+            <input name="ibge" disabled type="text" id="ibge" size="8" class="" /></label><br />
+        </div>
+        <div id="mapa" class="w-96 h-96 rounded-r-lg"></div>
+      </details>
+    </form>
+    
+    <button type="button" id="submitButton" class="btn">Criar Usuário</button>
+    <div class="colunabtn">
+      <button class="btn2" id="return"><a id="LogOff" href="">Sair   </a><i class="bx bxs-user"></i></button>
+      <button class="btn2"><a href="MenuUsuarios.html" class="">Voltar</a></button> 
+    </div>
+  </div>  
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/cep.js"></script>
+    <script src="js/createUser.js"></script>
+    <script src="js/LogOff.js"></script>
+  </body>
+</html>

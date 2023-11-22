@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro de produtos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="card">
+      <form id="prodForm" class="flex justify-center flex-wrap">
+        <h1>Login</h1>
+        <label for="EmailUser" class="input-box">Email:</label><br>
+        <div class="input-box">
+          <input type="email" id="EmailUser" name="EmailUser" autocomplete="off" required /><i class="bx bx-envelope"></i><br />
+        </div>
+        <label for="SenhaUser" class="">Senha:</label>
+        <div class="input-box">
+          <input type="text" id="SenhaUser" name="SenhaUser" autocomplete="off"  required /><i class="bx bxs-lock-alt"></i><br />
+        </div>
+        <p class="">Lembrar de mim?</p><input type="checkbox" id="lembrar"></input>
+        <p class="">Experiência sem Login?<a class="link" href="ProdutosCadastrados.html">  Clique Aqui</a></p>
+        <button type="button" id="submitButton" class="btn">Login</button>
+      </form>
+    </div>
+    <script src="js/loginUser.js"></script>
+  </body>
+</html>

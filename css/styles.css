@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+.card h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.card h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.card label {
+    font-size: 26px;
+    text-align: center;
+}
+
+.card .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.card .input-boxP {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.input-boxP input {
+    width: 50%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px 20px 20px 20px;
+}
+
+.card .input-boxend {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.input-boxend input {
+    width: 100%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px 20px 20px 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.card .btn {
+    width:  100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.btn2 {
+    width:  50%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#LogOff {
+    color: white;
+}
+
+.card .voltar {
+    width: 50px;
+    font-size: 40px;
+    background: none;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #d52d2d;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.card .idprod {
+    text-align: center;
+}
+
+.card .btnB {
+    width:  30%;
+    height: 35px;
+    background: cornflowerblue;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+.card .btnR {
+    width:  30%;
+    height: 40px;
+    background: crimson;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+.card .btnG {
+    width:  30%;
+    height: 40px;
+    background: greenyellow;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+.card .voltar:hover {
+    background: rgba(255, 255, 255, 0);
+}
+
+.card .btn:hover{
+    background: #b7b7b7;
+}
+
+.card #myChart {
+    width: 100%;
+}
+
+#return{
+    background: crimson;
+    color: #fff;
+}
+
+.no {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card .colunabtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#return:hover {
+    background:rgb(171, 16, 47);
+}
+
+#us:hover {
+    background: #4983bd;
+    color: black;
+}
+
+#pr:hover {
+    background: #e4ee5b;
+    color: #fff;
+}
+
+#us-pr:hover{
+    background: greenyellow;
+}
+
+#gr:hover {
+    background:#9f5bee;
+}
+
+#mapa{
+    width: 340px;
+    height: 220px;
+    border-radius: 20px;
+
+
+}
+.myChart{
+
+    width:100%;
+    max-width:600px
+}
+.link {
+    text-decoration:none;
+    color: rgb(97, 146, 215);
+    font-weight: bold;
+}
+
+.pad {
+    margin-inline: 10px;
+}
+
+.card .verde {
+    background: lime;
+}
+
+.card .verde:hover {
+    background: green;
+}
+
+#espaco {
+    margin-top: 10px;
+}

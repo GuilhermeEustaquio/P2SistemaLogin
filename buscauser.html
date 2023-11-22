@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="js/TokenCheck.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+  </head>
+  <body>
+    <div class="card pad">
+      <h1>Buscar Usuário</h1>
+      <div class="idprod">
+        <label for="getUserId" class="">ID do Usuário:</label>
+        <div class="input-boxP">
+          <input type="number" id="getUserId" class="" />
+        </div>
+        <button onclick="getUser()" class="btnB">Buscar</button>
+      </div>
+
+      <h1>Gerenciar Usuário</h1>
+      <div class="idprod">
+        <label for="inpuNome" class="">Nome:</label>
+        <div class="input-box">
+          <input type="text" id="inpuNome" class="" />
+        </div>
+        <label for="email" class="">Email:</label>
+        <div class="input-box">
+          <input type="text" id="inputEmail" class="" />
+        </div>
+        <button onclick="updateUser()" class="btnG">Atualizar</button>
+        <button onclick="deleteUser()" class="btnR">Excluir</button>
+      </div>
+      <div class="colunabtn">
+        <button class="btn2" id="return"><a id="LogOff" href="">Sair   </a><i class="bx bxs-user"></i></button>
+        <button class="btn2"><a href="MenuUsuarios.html" class="">Voltar</a></button> 
+      </div>
+    </div>
+
+    <div class="card pad">
+      <h1>Endereços do Usuário</h1>
+        <button id="AddEnd" onclick="AddEnd()" class="btn verde" disabled>Cadastrar Endereço</button>
+        <label class="">Cep: 
+        <div class="input-boxend" id="mapaContainer">
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" class="" /></label><br />
+        </div>
+        <label class="">Rua:
+        <div class="input-boxend">  
+            <input name="rua" disabled type="text" id="rua" size="60" class="" /></label><br />
+        </div>
+        <label class="">Bairro: 
+        <div class="input-boxend">
+            <input name="bairro" disabled type="text" id="bairro" size="40" class="" /></label><br />
+        </div>
+        <label class="">Cidade: 
+        <div class="input-boxend">
+            <input name="cidade" disabled type="text" id="cidade" size="40" class="" /></label><br />
+        </div>
+        <label class="">Estado:
+        <div class="input-boxend"> 
+            <input name="uf" disabled type="text" id="uf" size="2" class="" /></label><br />
+        </div>
+        <label class="">IBGE: 
+        <div class="input-boxend">
+            <input name="ibge" disabled type="text" id="ibge" size="8" class="" /></label><br />
+        </div>
+
+      <details id="espaco">
+        <summary>Endereços</summary>
+        <div id="endList" class="w-full">
+        
+        </div>
+      </details>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/cep.js"></script>
+    <script src="js/getUser.js"></script>
+    <script src="js/updateUser.js"></script>
+    <script src="js/deleteUser.js"></script>
+    <script src="js/AddEnd.js"></script>
+    <script src="js/LogOff.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro de produtos</title>
+    <script src="js/TokenCheck.js"></script>
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+  </head>
+  <body>
+    <div class="card">
+      <form id="prodForm" class="">
+        <h1>Cadastrar Produto</h1>
+        <label for="Nome" class="">Nome:</label>
+        <div class="input-box">
+          <input type="text" id="nomeprod" name="nomeprod" class="" required /><br />
+        </div>
+        <label for="Preço" class="">Preço:</label>
+        <div class="input-box">
+          <input type="text" id="precoprod" name="precoprod" class="" required /><br />
+        </div>
+        <label for="Quantidade" class="">Quantidade:</label>
+        <div class="input-box">
+          <input type="text" id="quantidadeprod" name="quantidadeprod" class="" required /><br />
+        </div>
+        <button type="button" id="submitButton" class="btn">Criar Produto</button>
+      </form>
+      <div class="colunabtn">
+        <button class="btn2" id="return"><a id="LogOff" href="">Sair   </a><i class="bx bxs-user"></i></button>
+        <button class="btn2"><a href="MenuProdutos.html" class="">Voltar</a></button> 
+      </div>
+    </div>
+    <script src="js/createProd.js"></script>
+    <script src="js/LogOff.js"></script>
+  </body>
+</html>
