@@ -7,7 +7,7 @@ use PDOException;
  private $host = "localhost";
  private $db_name = "banco";
  private $username = "root";
- private $password = "Etirrisa01!";
+ private $password = "root123";
  private $conn;
  private $db_type = "mysql"; // Opções: "mysql", "pgsql", "sqlite", "mssql"
 /*Dependendo do tipo de banco de dados escolhido, você pode precisar ajustar os parâmetros de conexão ($host, $db_name, $username e $password) da seguinte forma:

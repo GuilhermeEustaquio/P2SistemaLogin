@@ -52,7 +52,7 @@ setInterval(validaToken, 60000);
 
 function redirecioneLogin() {
     alert("Token inválido ou expirado!");
-    window.location.href = "index.html";
+   window.location.href = "index.html";
 }
 function logOff(){
     sessionStorage.removeItem("token","");

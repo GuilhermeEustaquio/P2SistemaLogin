@@ -148,7 +148,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (27,'Davi','davi@gmail.com','$2y$10$DYvhAzMJe15GWMEvfkNSCOhZVYn02PD0p2fVCS8p1oU0L6JE8CLAy',2),(28,'Julinho','julinhozika@yahoo.com.br','$2y$10$ZrNLfE1LrAmnIa6Xv62TwOoD4O2fdkjlkpXFz.wml8Dz29YzouEYW',1),(29,'Lauro','laurosigma@hotmail.com','$2y$10$lQtJnq0Vc.4gz48sOOoR5uT2/jSeBz1Ap2x1ZYZWDhDNo3unmG3K6',1);
+INSERT INTO `users` VALUES (27,'Guilherme','guilhermepeustaquio@gmail.com','$2y$10$DYvhAzMJe15GWMEvfkNSCOhZVYn02PD0p2fVCS8p1oU0L6JE8CLAy',2),(28,'Julinho','julinhozika@yahoo.com.br','$2y$10$ZrNLfE1LrAmnIa6Xv62TwOoD4O2fdkjlkpXFz.wml8Dz29YzouEYW',1),(29,'Lauro','laurosigma@hotmail.com','$2y$10$lQtJnq0Vc.4gz48sOOoR5uT2/jSeBz1Ap2x1ZYZWDhDNo3unmG3K6',1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 

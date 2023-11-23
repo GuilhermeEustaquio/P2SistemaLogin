@@ -100,7 +100,7 @@ class UserController {
         return ['status' => true, 'message' => 'Login bem-sucedido!','token'=>$jwt,'telas'=>$permissoes];
     }
     public function validarToken($token){
-        
+      
         $key = "9b426114868f4e2179612445148c4985429e5138758ffeed5eeac1d1976e7443";
         $algoritimo = 'HS256';
         try {

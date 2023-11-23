@@ -313,3 +313,43 @@ a {
     color: white;
     font-size: 20px;
 }
+
+.box  select{
+    background-color: #0563af;
+    color: white;
+    padding: 5px;
+    width: 150px;
+    border: none;
+    font-size: 13px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 14px;
+}
+
+
+
+li button {
+    width:  19%;
+    height: 25px;
+    background: rgb(255, 47, 47);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+
+#perfilList{
+    text-align: center;
+    font-size: 30px;
+}
+
+ul {
+    list-style: none;
+}

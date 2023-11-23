@@ -36,6 +36,7 @@ break;
             echo json_encode($validationResponse['message']);
             exit;
         }
+        
         echo json_encode($validationResponse);
         exit;
     break;
